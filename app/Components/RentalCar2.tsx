@@ -5,7 +5,7 @@ import rentalCar2 from "../../public/images/rentalCar2.png";
 
 export default function RentalCar2(props:any) {
   return (
-    <div className={`bg-[url(/images/bg2.png)] h-[370px] w-[100%] md:w-[70%] lg:w-[50%] rounded-2xl bg-center bg-cover flex flex-col p-6 ${props.visibility}`}>
+    <div className={`bg-[url(/images/bg2.png)] min-h-[370px] w-[100%] rounded-2xl bg-center bg-cover flex flex-col p-6 ${props.visibility}`}>
     <div>
       <h1 className="text-3xl font-semibold text-white w-[70%] xl:w-[50%] mt-2">Easy way to rent a car at a low price</h1>
       <p className="text-base text-white mt-4 w-[70%]">Providing cheap car rental services and safe and comfortable facilities.</p>
