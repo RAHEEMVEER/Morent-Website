@@ -3,7 +3,7 @@ import TypeCapacityLabel from "./TypeCapacityLabel";
 
 export default function CarTypeAndCapacity() {
   return (
-    <div className="bg-white min-h-[100vh] min-w-[250px] p-5 shadow-inner">
+    <div className="bg-white min-h-[100vh] min-w-[250px] p-5 shadow-inner hidden lg:block">
       <div>
         <h1 className="text-lg font-semibold">Type</h1>
         <form className="flex flex-col mt-1">

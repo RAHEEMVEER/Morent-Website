@@ -33,7 +33,7 @@ export default function Home() {
       <RecomCars 
        style="px-4 lg:px-12 pb-3"
        gridCol="grid-cols-4"
-       showMore={<div className='flex justify-center mt-6'><Button stylee="bg-[#3563E9] py-2 px-3" content="Show More Cars" contentStyle="text-white text-sm"/></div>}
+       showMore={<div className='flex justify-center mt-6 mb-3'><Button stylee="bg-[#3563E9] py-2 px-3" content="Show More Cars" contentStyle="text-white text-sm"/></div>}
        cars={[
        <Cars CarName="All New Rush" carTurbo="family car" img={car4} liter="70" capacity="6" price="$78.00"/>,
        <Cars CarName="CR-V" carTurbo="family car" img={car5} liter="80" capacity="8" price="$80.00"/>,

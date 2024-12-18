@@ -6,7 +6,7 @@ import Locationtime from"./LocationTime";
 
 export default function LocationTime() {
   return (
-    <div className='flex flex-col pt-10 lg:flex-row items-center lg:px-12 w-[100%] gap-4 xl:gap-8 bg-[#F6F7F9] px-4'>
+    <div className='flex flex-col sm:pt-8 md:pt-12 lg:pt-0 lg:flex-row items-center lg:px-12 w-[100%] gap-4 xl:gap-8 bg-[#F6F7F9] px-4'>
        <div className='shadow-2xl w-[100%] md:w-[70%] lg:w-[48%] p-3 rounded-md'>
          <h1 className='flex gap-2 items-center font-semibold mb-3 sm:mb-0'><Image src={mark} alt="button" className='w-4 h-4 font'/>Pick-Up</h1>
          <Locationtime />
