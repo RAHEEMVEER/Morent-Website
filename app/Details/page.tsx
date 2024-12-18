@@ -25,7 +25,7 @@ export default function page() {
   return (
     <section className="flex min-h-[100vh]">
       <CarTypeAndCapacity />
-      <div className="flex flex-col bg-[#F6F7F9] px-2 sm:px-4 lg:px-5">
+      <div className="flex flex-col bg-[#F6F7F9] px-3 lg:px-5">
        <div className="pt-5 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-4 min-h-[50vh]">
         <div className="h-max">
           <RentalCar2 visibility="flex"/>
