@@ -55,8 +55,8 @@ export default function page() {
           <Button stylee="bg-[#3563E9] px-3 py-2 rounded-md" contentStyle="text-white text-sm" content="Rent Now"/>
           <div className="mt-6">
            <Image src={shell} alt='arrow down' className='w-6'/>
-           <h1 className="text-base font-semibold mt-4">All gap-2 your data are safe</h1>
-           <p className="text-[#90A3BF]">We are using the most advanced security to provide you the best experience ever.</p>
+           <h1 className="text-lg font-semibold mt-4">All your data are safe</h1>
+           <p className="text-sm text-[#90A3BF] mt-1">We are using the most advanced security to provide you the best experience ever.</p>
           </div>
         </div>
       </div>
