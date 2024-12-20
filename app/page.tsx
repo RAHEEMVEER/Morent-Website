@@ -24,25 +24,25 @@ export default function Home() {
         grid="grid-cols-4"
         speacility="Popular Cars"
         cars={[
-          <Cars CarName="Koenigsegg" carTurbo="sport car" img={Car1} liter="90" capacity="2" price="$99.00"/>,
-          <Cars CarName="Nissan GT-R" carTurbo="sport car" img={Car2} liter="80" capacity="2" price="$120.00"/>,
-          <Cars CarName="Rolls - Royce"carTurbo="family car" img={Car3} liter="70" capacity="4" price="$180.10"/>,
-          <Cars CarName="Nissan GT-R" carTurbo="sport car" img={Car2} liter="80" capacity="2" price="$120.00"/>,
+          <Cars CarName="Koenigsegg" carTurbo="sport car" img={Car1} liter="90" capacity="2" price="$99.00" route="/Details"/>,
+          <Cars CarName="Nissan GT-R" carTurbo="sport car" img={Car2} liter="80" capacity="2" price="$120.00" route="/Details"/>,
+          <Cars CarName="Rolls - Royce"carTurbo="family car" img={Car3} liter="70" capacity="4" price="$180.10" route="/Details"/>,
+          <Cars CarName="Nissan GT-R" carTurbo="sport car" img={Car2} liter="80" capacity="2" price="$120.00" route="/Details"/>,
         ]}
       />
       <RecomCars 
        style="px-4 lg:px-12 pb-3"
        gridCol="grid-cols-4"
-       showMore={<div className='flex justify-center mt-6 mb-3'><Button stylee="bg-[#3563E9] py-2 px-3" content="Show More Cars" contentStyle="text-white text-sm"/></div>}
+       showMore={<div className='flex justify-center mt-6 mb-3'><Button stylee="bg-[#3563E9] py-2 px-3 rounded-md" content="Show More Cars" contentStyle="text-white text-sm"/></div>}
        cars={[
-       <Cars CarName="All New Rush" carTurbo="family car" img={car4} liter="70" capacity="6" price="$78.00"/>,
-       <Cars CarName="CR-V" carTurbo="family car" img={car5} liter="80" capacity="8" price="$80.00"/>,
-       <Cars CarName="All New Terios" carTurbo="family car" img={car6} liter="90" capacity="2" price="$90.00"/>,
-       <Cars CarName="CR-V" carTurbo="family car" img={car9} liter="80" capacity="6" price="$80.00"/>,
-       <Cars CarName="MG ZX Exclusive" carTurbo="family car" img={car8} liter="70" capacity="4" price="$76.00"/>,
-       <Cars CarName="New MG ZS" carTurbo="family car" img={car7} liter="80" capacity="6" price="$86.00"/>,
-       <Cars CarName="MG ZX Exclusive" carTurbo="family car" img={car8} liter="70" capacity="4" price="$76.00"/>,
-       <Cars CarName="New MG ZS" carTurbo="family car" img={car7} liter="80" capacity="6" price="$86.00"/>,
+       <Cars CarName="All New Rush" carTurbo="family car" img={car4} liter="70" capacity="6" price="$78.00" route="/Details"/>,
+       <Cars CarName="CR-V" carTurbo="family car" img={car5} liter="80" capacity="8" price="$80.00" route="/Details"/>,
+       <Cars CarName="All New Terios" carTurbo="family car" img={car6} liter="90" capacity="2" price="$90.00" route="/Details"/>,
+       <Cars CarName="CR-V" carTurbo="family car" img={car9} liter="80" capacity="6" price="$80.00" route="/Details"/>,
+       <Cars CarName="MG ZX Exclusive" carTurbo="family car" img={car8} liter="70" capacity="4" price="$76.00" route="/Details"/>,
+       <Cars CarName="New MG ZS" carTurbo="family car" img={car7} liter="80" capacity="6" price="$86.00" route="/Details"/>,
+       <Cars CarName="MG ZX Exclusive" carTurbo="family car" img={car8} liter="70" capacity="4" price="$76.00" route="/Details"/>,
+       <Cars CarName="New MG ZS" carTurbo="family car" img={car7} liter="80" capacity="6" price="$86.00" route="/Details"/>,
        ]}/>
     </>
   );

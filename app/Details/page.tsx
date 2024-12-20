@@ -20,6 +20,7 @@ import RecomCars from "../Components/RecomCars";
 import car4 from "../../public/images/car4.png";
 import car5 from "../../public/images/car5.png";
 import car6 from "../../public/images/car6.png";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -56,7 +57,7 @@ export default function page() {
              <h1><span className="text-xl font-bold">$80.00/</span><span className="text-[#90A3BF] text-base">day</span></h1>
              <p className="text-[#90A3BF] text-base line-through">$100.00</p>
             </div>
-            <Button stylee="bg-[#3563E9] px-3" contentStyle="text-white" content="Rent Now"/>
+            <Link href="/PaymentMethod"><Button stylee="bg-[#3563E9] px-3 py-2 rounded-md" contentStyle="text-white" content="Rent Now"/></Link>
           </div>
         </div>
        </div>
@@ -78,18 +79,18 @@ export default function page() {
         grid="grid-cols-3"
         speacility="Recent Car"
         cars={[
-          <Cars CarName="Koenigsegg" carTurbo="sport car" img={Car1} liter="90" capacity="2" price="$99.00"/>,
-          <Cars CarName="Nissan GT-R" carTurbo="sport car" img={Car2} liter="80" capacity="2" price="$120.00"/>,
-          <Cars CarName="Rolls - Royce"carTurbo="family car" img={Car3} liter="70" capacity="4" price="$180.10"/>,
+          <Cars CarName="Koenigsegg" carTurbo="sport car" img={Car1} liter="90" capacity="2" price="$99.00" route="/PaymentMethod"/>,
+          <Cars CarName="Nissan GT-R" carTurbo="sport car" img={Car2} liter="80" capacity="2" price="$120.00" route="/PaymentMethod"/>,
+          <Cars CarName="Rolls - Royce"carTurbo="family car" img={Car3} liter="70" capacity="4" price="$180.10" route="/PaymentMethod"/>,
         ]}
       />
       <RecomCars 
        style="pb-7"
        gridCol="grid-cols-3"
        cars={[
-       <Cars CarName="All New Rush" carTurbo="family car" img={car4} liter="70" capacity="6" price="$78.00"/>,
-       <Cars CarName="CR-V" carTurbo="family car" img={car5} liter="80" capacity="8" price="$80.00"/>,
-       <Cars CarName="All New Terios" carTurbo="family car" img={car6} liter="90" capacity="2" price="$90.00"/>,
+       <Cars CarName="All New Rush" carTurbo="family car" img={car4} liter="70" capacity="6" price="$78.00" route="/PaymentMethod"/>,
+       <Cars CarName="CR-V" carTurbo="family car" img={car5} liter="80" capacity="8" price="$80.00" route="/PaymentMethod"/>,
+       <Cars CarName="All New Terios" carTurbo="family car" img={car6} liter="90" capacity="2" price="$90.00" route="/PaymentMethod"/>,
        ]}/>
        </div>
       </div>
