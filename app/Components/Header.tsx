@@ -1,6 +1,7 @@
 import React from "react";
 import accountImg from "../../public/images/userImg.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function () {
   return (
@@ -10,7 +11,7 @@ export default function () {
       <div className="hidden md:flex gap-4 items-center">
         <div className="flex justify-center items-center w-9 h-9 border border-gray-500 hover:border-[#3563E9] rounded-full cursor-pointer hover:bg-[#3563E9] group transition-all duration-500 ease-in-out"><i className="ri-poker-hearts-fill text-gray-600 text-[20px] group-hover:text-white"></i></div>
         <div className="flex justify-center items-center w-9 h-9 border border-gray-500 hover:border-[#3563E9] rounded-full cursor-pointer hover:bg-[#3563E9] group transition-all duration-500 ease-in-out"><i className="ri-notification-3-fill text-gray-600 text-[20px] group-hover:text-white"></i></div>
-        <div className="flex justify-center items-center w-9 h-9 border border-gray-500 hover:border-[#3563E9] rounded-full cursor-pointer hover:bg-[#3563E9] group transition-all duration-500 ease-in-out"><i className="ri-settings-4-fill text-gray-600 text-[20px] group-hover:text-white"></i></div>
+        <div className="flex justify-center items-center w-9 h-9 border border-gray-500 hover:border-[#3563E9] rounded-full cursor-pointer hover:bg-[#3563E9] group transition-all duration-500 ease-in-out"><Link href="/Dashboard"><i className="ri-settings-4-fill text-gray-600 text-[20px] group-hover:text-white"></i></Link></div>
         <a href="/" className="w-9 h-9 rounded-full"><Image src={accountImg} alt="userImage" /></a>
       </div>
     </header>
